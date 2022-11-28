@@ -1,8 +1,9 @@
 # Ryokan API
 
 ## Setup
-The files in this repo are the ones that I created/edited. This means that if you want to make this work on your end, you'll need the proper dependencies.
-![alt text] (https://github.com/andrewhuang0828/RyokanAPI/blob/main/API%20dependencies.png)
+The files in this repo are the ones that I created/edited. This means that if you want to make this work on your end, you'll probably need the proper dependencies.
+
+![alt text](https://github.com/andrewhuang0828/RyokanAPI/blob/main/API%20dependencies.png)
 
 
 ## Routes
