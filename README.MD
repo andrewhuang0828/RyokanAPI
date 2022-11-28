@@ -135,12 +135,12 @@ DELETE ```http://localhost:3402/api/ryokan{Id}```
 
 Deleting an entry in either database is possible by specifying the Id of the entry. When trying to delete an entry from the prefecture database, if there are any entries that exist with that prefecture in the prefecture field in the ryokan database, you will be unable to delete the prefecture entry.
 
-Example DELETE Request
+Example DELETE Request with prefecture endpoint
 
 DELETE ```http://localhost:3402/api/prefecture/1```
 which should return ```Successful deletion!```
 
-Example DELETE Request
+Example DELETE Request with ryokan endpoint
 
 DELETE ```http://localhost:3402/api/ryokan/1```
 which should return ```Successful deletion!```
