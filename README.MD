@@ -1,7 +1,8 @@
 # Ryokan API
 
 ## Setup
-The files in this repo are the ones that I created/edited. This means that if you wanted to make this work on your end, you'd need to install the relevant packages.
+The files in this repo are the ones that I created/edited. This means that if you want to make this work on your end, you'll need the proper dependencies.
+![alt text] (https://github.com/andrewhuang0828/RyokanAPI/blob/main/API%20dependencies.png)
 
 
 ## Routes
@@ -85,6 +86,7 @@ Sending a POST request to the prefecture endpoint will add a new entry to the pr
 
 Example POST request and request body
 POST ```http://localhost:3402/api/prefecture```
+
 With a request body of
 ```
 {
@@ -105,6 +107,7 @@ Sending a POST request to the ryokan endpoint will add a new entry to the prefec
 
 Example POST request and request body
 POST ```http://localhost:3402/api/ryokan```
+
 With a request body of
 ```
 {
@@ -125,3 +128,19 @@ Which should return
 }
 ```
 ### Delete Requests
+DELETE ```http://localhost:3402/api/prefecture{Id}```
+DELETE ```http://localhost:3402/api/ryokan{Id}```
+
+Deleting an entry in either database is possible by specifying the Id of the entry. When trying to delete an entry from the prefecture database, if there are any entries that exist with that prefecture in the prefecture field in the ryokan database, you will be unable to delete the prefecture entry.
+
+Example DELETE Request
+DELETE ```http://localhost:3402/api/prefecture/1```
+which should return ```Successful deletion!```
+
+Example DELETE Request
+DELETE ```http://localhost:3402/api/ryokan/1```
+which should return ```Successful deletion!```
+
+If the endpoint is provided with an Id of an nonexistant entry, it wll return ```That prefecture/ryokan doesn't exist!``` depending on whether it was the the prefecture or ryokan endpoint.
+
+
