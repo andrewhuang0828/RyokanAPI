@@ -13,7 +13,7 @@ GET ```http://localhost:3402/api/prefecture/{Optional Id}```
 
 Returns a list of all prefectures in the database if an Id is not provided. If an Id is provided, it will return the prefecture with the associated Id. If the provided Id does not exist, it will return an error saying "That prefecture doesn't exist!"
 
-Sample GET request without an Id 
+Example GET request without an Id 
 GET ```http://localhost:3402/api/prefecture```
 ```
 [
@@ -52,7 +52,7 @@ GET ```http://localhost:3402/api/ryokan/{Optional Id}```
 
 Returns a list of all prefectures in the database if an id is not provided. If an Id is provided, it will return the prefecture with the associated Id. If the provided Id does not exist, it will return an error saying "That ryokan doesn't exist!"
 
-Sample GET request without an Id
+Example GET request without an Id
 GET ```http://localhost:3402/api/ryokan```
 ```
 [
