@@ -1,12 +1,12 @@
 # Ryokan API
 
 ## Setup
-The files in this repo are the ones that I created/edited. This means that if you want to make this work on your end, you'll probably need the proper dependencies.
+A local database is required with the proper tables and columns and must be running when accessing the API. The files in this repo are the ones that I created/edited. This means that if you want to make this work on your end, you'll probably need the proper dependencies.
 
 ![alt text](https://github.com/andrewhuang0828/RyokanAPI/blob/main/API%20dependencies.png)
 
 
-## Routes
+## Endpoints
 
 ### Get Requests
 GET ```http://localhost:3402/api/prefecture/{Optional Id}```
