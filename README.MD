@@ -7,12 +7,12 @@ The files in this repo are the ones that I created/edited. This means that if yo
 ## Routes
 
 ### Get Requests
-GET '''http://localhost:3402/api/prefecture/{Optional Id}'''
+GET ```http://localhost:3402/api/prefecture/{Optional Id```
 Returns a list of all prefectures in the database if an id is not provided. If an Id is provided, it will return the prefecture with the associated Id. If the provided Id does not exist, it will return an error saying "That prefecture doesn't exist!"
 
 Sample GET request without an Id 
-GET '''http://localhost:3402/api/prefecture'''
-'''
+GET ```http://localhost:3402/api/prefecture```
+```
 [
     {
         "prefectureId": 6,
@@ -43,14 +43,14 @@ GET '''http://localhost:3402/api/prefecture'''
         "prefecture": "Yamagata"
     }
 ]
-'''
+```
 
-GET '''http://localhost:3402/api/ryokan/{Optional Id}'''
+GET ```http://localhost:3402/api/ryokan/{Optional Id```
 Returns a list of all prefectures in the database if an id is not provided. If an Id is provided, it will return the prefecture with the associated Id. If the provided Id does not exist, it will return an error saying "That ryokan doesn't exist!"
 
 Sample GET request without an Id
-GET '''http://localhost:3402/api/ryokan'''
-'''
+GET ```http://localhost:3402/api/ryokan```
+```
 [
     {
         "ryokanId": 1,
@@ -74,7 +74,7 @@ GET '''http://localhost:3402/api/ryokan'''
         "half_board": true
     }
 ]
-'''
+```
 
 
 
